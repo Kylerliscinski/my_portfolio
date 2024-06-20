@@ -1,0 +1,156 @@
+/* KEY | Color Palette
+These `:root` selectors can all be accessed by using var(--variable-name) in your css <style> tags in your components, or by reusing them in your scss files (like how we are creating the green-pink-gradient class by referencing the --green and --pink variables from our color palette). */
+
+:root {
+  /* Fonts */
+  --text-primary: #E7E7E7;
+  /* EDITABLE - Change color hex value top change primary text color on the entire page */
+  --text-secondary: #AAA6C3;
+  /* EDITABLE - Change color hex value top change secondary text color on the entire page */
+
+  /* Standard Colors */
+  /* EDITABLE - The 'Standard Colors' are your main color palette. I recommend keeping the variable names and just changing the values until you find a palette you like.
+  /* TIP - Refer to the 'How to Render your Personalized Styles > How to Change all Variable Names throughout your Portfolio' in the README.md file if you aren't sure how to change all variable names throughout your Portfolio template. */
+  --purple: #804dee;
+  --blue: #56ccf2;
+  --green: #00cea8;
+  --red: #D85571;
+  --pink: #ec008c;
+
+  /* Shadows */
+  /* EDITABLE - The 'Shadows' are your shadow color palette. I recommend keeping them the same colors as your 'Standard Colors', then adding 'a5' to the end of your color to add some glassmorphism. */
+  --shadow-purple: #804deea5;
+  --shadow-blue: #56ccf2a5;
+  --shadow-green: #00cea8a5;
+  --shadow-red: #D85571a5;
+  --shadow-pink: #ec008ca5;
+
+  /* Dark Colors */
+  /* EDITABLE - The 'Dark Colors' are your dark color palette. I recommend opening your color picker and simply selecting a darker shade for each 'Standard Color'. */
+  --dark-purple: #3e3164;
+  --dark-green: #00664d;
+  --dark-red: #63212b;
+  --dark-pink: #7d003c;
+
+  /* Gradients */
+  /* EDITABLE | Gradient Variables
+  --black-transparent-gradient: This is the gradient that darkens the background of the entire page. Changing this value will change that overlay background gradient color.
+
+  --black-purple-radial-gradient: This is the main background for the entire page. Changing this value will change the main background color.
+
+  --vertical-nav-gradient: This is the gradient that sets the background gradient for the vertical navbar. Changing this value will change that overlay background gradient color.
+  */
+  --black-gradient: linear-gradient(to right, #232323, #000000);
+  --purple-gradient: linear-gradient(-90deg, var(--dark-purple) 0%, #231d2e99 100%);
+  --black-transparent-gradient: linear-gradient(to right, #000000 0%, #110e19);
+  --black-purple-radial-gradient: radial-gradient(circle at center, #181326 0%, #0e0c13);
+  --black-purple-radial-gradient-alt: radial-gradient(circle at center, #0e0c13 0%, #181326);
+  --vertical-nav-gradient: linear-gradient(90deg, transparent 0%, #14101f 70%, #0f0d16 90%);
+
+  /* Borders */
+  /* EDITABLE - This is the shaded border that decorates the left-hand side of the vertical navbar buttons on larger screens. Changing this value will change that left-hand button shade color. */
+  --border-inactive: 3px ridge #33333367;
+}
+
+
+/* KEY | Gradient Text Classes
+Utilize the class selectors below as class names in your components to apply the gradient to the text.
+Example:
+<div class="purple-text-gradient">Hello World</div>
+Necessary fallbacks are included for older browsers that do not support the linear-gradient property like IE Explorer */
+
+/* IMPORTANT - If you change the color palette, you will need to update the gradient classes below to match your new color palette. If you change the variable names and their color hex values, you will need to update the gradient classes below to match your new variable names and their color hex values.
+Example:
+.purple-text-gradient {
+  background: var(--purple);
+  background: -webkit-linear-gradient(to top, var(--purple), #ee00ff);
+  background: linear-gradient(to top, var(--purple), #ee00ff);
+}
+Becomes:
+.new-color-text-gradient {
+  background: var(--new-color);
+  background: -webkit-linear-gradient(to top, var(--new-color), #new-matching-gradient-hex-color);
+  background: linear-gradient(to top, var(--new-color), #new-matching-gradient-hex-color);
+} */
+
+.text-primary {
+  color: #E7E7E7 !important;
+}
+
+.text-secondary {
+  color: #AAA6C3 !important;
+}
+
+.black-gradient {
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #232323, #000000);
+  /* Chrome 10-25|Safari 5.1-6 */
+  background: linear-gradient(to right, #232323, #000000);
+  /* W3C|IE 10+/Edge|Firefox 16+|Chrome 26+|Opera 12+|Safari 7+ */
+}
+
+.black-gradient-reverse {
+  background: #000000;
+  background: -webkit-linear-gradient(to left, #232323 0, #000000 10%, #0f0d16 100%);
+  background: linear-gradient(to left, #232323 0, #000000 10%, #0f0d16 100%);
+}
+
+.purple-gradient {
+  background: var(--dark-purple);
+  background: -webkit-linear-gradient(-90deg, var(--dark-purple) 0%, #231d2e99 100%);
+  background: linear-gradient(-90deg, var(--dark-purple) 0%, #231d2e99 100%);
+}
+
+.green-pink-gradient {
+  background: var(--green);
+  background: -webkit-linear-gradient(-90.13deg, var(--green) 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, var(--green) 1.9%, #bf61ff 97.5%);
+}
+
+.purple-text-gradient {
+  background: var(--purple);
+  background: -webkit-linear-gradient(to top, var(--purple), #ee00ff);
+  background: linear-gradient(to top, var(--purple), #ee00ff);
+}
+
+.yellow-text-gradient {
+  background: #F7DF00;
+  background: -webkit-linear-gradient(to top, #F7DF00, #E7B86C);
+  background: linear-gradient(to top, #F7DF00, #E7B86C);
+}
+
+.orange-text-gradient {
+  background: #f12711;
+  background: -webkit-linear-gradient(to top, #f12711, #f5af19);
+  background: linear-gradient(to top, #f12711, #f5af19);
+}
+
+.green-text-gradient {
+  background: var(--green);
+  background: -webkit-linear-gradient(to top, var(--green), #00ce7f);
+  background: linear-gradient(to top, var(--green), #00ce7f);
+}
+
+.blue-text-gradient {
+  background: var(--blue);
+  background: -webkit-linear-gradient(to top, #2f80ed, var(--blue));
+  background: linear-gradient(to top, #2f80ed, var(--blue));
+}
+
+.pink-text-gradient {
+  background: var(--pink);
+  background: -webkit-linear-gradient(to top, var(--pink), #fc6767);
+  background: linear-gradient(to top, var(--pink), #fc6767);
+}
+
+.purple-text-gradient,
+.yellow-text-gradient,
+.orange-text-gradient,
+.green-text-gradient,
+.blue-text-gradient,
+.pink-text-gradient {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}

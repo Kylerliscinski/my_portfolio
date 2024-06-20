@@ -1,0 +1,62 @@
+@import "./_variables.scss";
+@import "./_utilities.scss";
+@import "./loaders.scss";
+@import "./_styles.scss";
+
+body {
+  overscroll-behavior: none;
+  /* NOTE - The bottom property set on body will prevent modals from replacing custom scrollbar styles with the default browser scrollbar styles. */
+  padding-right: 0 !important;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: none;
+  background-blend-mode: overlay;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+//If you want the thumb to not interfere with the view of the navbar, you can set the z-index of the thumb to -1. This will make the thumb appear behind the navbar.
+::-webkit-scrollbar {
+  display: block;
+  width: 15px;
+  border-radius: 10px;
+  background: #232323;
+
+  &-thumb {
+    background: linear-gradient(to bottom, transparent 0, var(--dark-purple) 30%, transparent 65%);
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  &-track {
+    background: linear-gradient(to bottom, #000000, #232323);
+    border-radius: 0px;
+
+    //Only give the track piece the 'margin-top' property on medium and smaller screens to compensate for horizontal nav height.
+    @media (max-width: 992px) {
+      &-piece {
+        margin-top: 55px;
+      }
+    }
+  }
+
+  &-corner {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  &-button {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}

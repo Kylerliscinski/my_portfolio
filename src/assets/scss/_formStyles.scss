@@ -1,0 +1,157 @@
+@import './_styles.scss';
+
+.form {
+  background: #100221ea;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 520px;
+  padding: 20px;
+  filter:
+    drop-shadow(0px 4px 4px #ffffff80) drop-shadow(0px 8px 8px #00000040) drop-shadow(8px 8px 8px #00000040);
+  transition: filter 500ms;
+
+  &:focus-within {
+    border: 2px solid #00000080;
+    background: linear-gradient(var(--dark-purple), var(--dark-pink));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: background 500ms;
+    filter:
+      drop-shadow(0px 4px 4px var(--dark-pink)) drop-shadow(0px 8px 8px var(--dark-green)) drop-shadow(8px 8px 8px var(--dark-purple));
+
+    .cut {
+      background: #4b225899;
+      filter: drop-shadow(0px 4px 4px #00000080);
+    }
+  }
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.name-input {
+  margin-top: 40px;
+}
+
+.email-input,
+.message-input {
+  margin-top: 30px;
+}
+
+.input {
+  background: var(--black-gradient);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: var(--text-primary);
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.textarea {
+  height: 200px;
+  resize: none;
+  outline: 0;
+  padding: 25px 20px 0;
+}
+
+.cut {
+  background: var(--black-purple-radial-gradient);
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 80px;
+}
+
+.cut-long {
+  width: 100px;
+}
+
+
+.input:focus~.cut,
+.input:not(:placeholder-shown)~.cut,
+.input:focus~.cut-long,
+.input:not(:placeholder-shown)~.cut-long {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus~.placeholder,
+.input:not(:placeholder-shown):invalid~.placeholder {
+  color: var(--shadow-pink);
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+:is(input, textarea):not(:placeholder-shown) {
+  &:valid::after {
+    outline: 1px ridge var(--shadow-green);
+  }
+
+  &:invalid::after {
+    outline: 0.5px dashed var(--shadow-pink);
+  }
+}
+
+input:placeholder-shown~.placeholder,
+textarea:placeholder-shown~.placeholder {
+  color: transparent;
+  -webkit-text-fill-color: var(--text-primary);
+}
+
+.input:focus~.placeholder {
+  color: transparent;
+  -webkit-text-fill-color: var(--blue);
+  text-shadow: 1px 1px 0.5px #000;
+  filter: brightness(1.2);
+}
+
+input:not(:placeholder-shown):valid~.placeholder,
+textarea:not(:placeholder-shown):valid~.placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+  visibility: hidden;
+
+  &::before {
+    content: 'Confirmed ✓';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    color: var(--green);
+    text-align: center;
+    display: block;
+    visibility: visible;
+  }
+}
