@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./src/assets/img/icons/logo.svg" alt="My Custom Logo" class="img-fluid" width="25%" />
+  <img src="./src/assets/img/icons/KJlogo.png" alt="My Custom Logo" class="img-fluid" width="25%" />
 
 Welcome to my portfolio template!
 =================================
@@ -514,4 +514,4 @@ The content under the CodeWorks®, LLC Organization and all of the individual re
 © CodeWorks® LLC, 2021. Unauthorized use and/or duplication of this material without express and written permission from CodeWorks, LLC is strictly prohibited.
 
 <img src="https://bcw.blob.core.windows.net/public/img/7815839041305055" width="125">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./src/assets/img/icons/logo.svg" alt="My Custom Logo" class="img-fluid" width="3.75%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./src/assets/img/icons/KJlogo.png" alt="My Custom Logo" class="img-fluid" width="3.75%" />
