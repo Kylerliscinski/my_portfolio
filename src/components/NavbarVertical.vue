@@ -31,7 +31,7 @@ async function scrollTo(id) {
 <template>
 <nav class="vertical-nav black-gradient d-flex justify-content-start flex-column pt-4">
   <div class="col-12 logo-container d-flex justify-content-start pb-2 ps-4 ms-3">
-    <img @click="scrollTo(hero)" title="SVG logo Design By: Anthony Vancattenburch" alt="Anthony's custom SVG logo/brand" src="../assets/img/icons/logo.svg" class="my-logo" height="65" />
+    <img @click="scrollTo(hero)" title="SVG logo " alt="SVG logo/brand" src="../assets/img/icons/logo.svg" class="my-logo" height="65" />
   </div>
   
   <ul class="nav-list">

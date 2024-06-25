@@ -11,8 +11,8 @@ let activeLinkId = ref(null);
 <template>
   <nav class="navbar navbar-expand-lg custom-navbar black-gradient px-3">
     <div class="d-flex align-items-center">
-      <img @click="scrollTo(hero)" src="../assets/img/icons/logo.svg" title="SVG logo Design By: Anthony Vancattenburch" alt="SVG Logo Design By: Anthony Vancattenburch" class="my-logo" height="45" />
-      <span class="my-name">AJ Vancattenburch</span>
+      <img @click="scrollTo(hero)" src="../assets/img/icons/logo.svg" title="" alt="SVG Logo" class="my-logo" height="45" />
+      <span class="my-name">Kyler Liscinski</span>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

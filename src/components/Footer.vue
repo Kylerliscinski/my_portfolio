@@ -13,7 +13,7 @@ const linkedInLink = computed(() => footerLinks.linkedInLink);
 <template>
   <footer class="col-12 d-flex justify-content-center bg-footer">
       <span class="col-12 col-lg-10 offset-lg-2 d-flex justify-content-between black-gradient-reverse text-light p-2">
-        <span class="col-11 d-flex justify-content-center m-0">©2024 Copyright:&nbsp;<strong>Anthony Vancattenburch</strong></span>
+        <span class="col-11 d-flex justify-content-center m-0">©2024 Copyright:&nbsp;<strong>Kyler Liscinski</strong></span>
         <span class="col-1 d-flex justify-content-around align-items-center">
           <a :href="ghLink.external_url" target="_blank" rel="noopener noreferrer" class="pe-1 pt-1">
             <SVGGithub :fillColor="'var(--purple)'" :strokeColor="'var(--dark-purple)'" :strokeWidth="3" class="gh-icon" />
