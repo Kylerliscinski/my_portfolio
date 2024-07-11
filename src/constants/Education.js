@@ -18,34 +18,7 @@ const educationData = {
         "Worked in professional environments centered on real-world industry experience and creative problem solving.",
         "Voted Idaho's #1 Specialty School."
       ],
-    },
-    // {
-    //   major: "Earned Certifications",
-    //   school_name: "Wild Learner",
-    //   icon: wildLearner,
-    //   date: "Jan 2023 - June 2023",
-    //   cssSelector: "wildlearner",
-    //   points: [
-    //     "Intro to HTML5",
-    //     "Intro to CSS3",
-    //     "Intro to JavaScript",
-    //     "Advanced JavaScript",
-    //     "Intro to React.js",
-    //     "Intro to Vue.js",
-    //     "Intro to Node.js",
-    //     "Intro to Express.js"
-    //   ]
-    // },
-    // {
-    //   major: "Earned Certifications",
-    //   school_name: "Grasshopper",
-    //   icon: grasshopper,
-    //   date: "Jan 2022 - Jan 2023",
-    //   cssSelector: "grasshopper",
-    //   points: [
-    //     "JS Fundamentals", "JS Fundamentals II", "JS Array Methods", "JS Animations", "JS Animations II"
-    //   ],
-    // },
+    }
   ]
 }
 export default educationData;

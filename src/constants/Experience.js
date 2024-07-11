@@ -46,7 +46,7 @@ const experienceData = {
       title: "Owner",
       company_name: "Linear Lawncare LLC",
       icon: linear,
-      date: "August 2021 - August 2023",
+      date: "January 2020 - July 2021",
       cssSelector: "imag",
       points: [
         "CUSTOMER NETWORKING AND RELATIONS: Handled customer networking and maintained strong relationships to drive business growth.",

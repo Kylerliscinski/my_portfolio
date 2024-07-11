@@ -31,9 +31,9 @@ const isMobile = computed(() => window.innerWidth < 768);
 <template>
   <section class="row d-flex justify-content-end page-wrapper">
     <resume-modal-button v-if="!isMobile" class="col-12 resume-modal-container d-flex justify-content-end">
-      <a type="button" role="button" class="resume-modal-btn" data-bs-toggle="modal" data-bs-target="#resumeModal">
+      <!-- <a type="button" role="button" class="resume-modal-btn" data-bs-toggle="modal" data-bs-target="#resumeModal">
         <img src="../assets/img/my-resume.svg" title="Check out my resume!" alt="Modal button to view my resume" class="resume-modal-btn-icon" height="45" />
-      </a>
+      </a> -->
     </resume-modal-button>
     <div class="col-2 vertical-nav-container d-none d-lg-block">
       <NavbarVertical :navLink="navLink" />
