@@ -1,36 +1,10 @@
-import { ql, myLogo, codeworks, imag } from '../assets/img/company/_index';
+import { ql, myLogo, codeworks, imag, linear } from '../assets/img/company/_index';
 
 const experienceData = {
   id: "experience",
   title: "Work Experience",
   subtitle: "What I have done so far...",
   companies: [
-    // {
-    //   title: "Software Test Engineer",
-    //   company_name: "QualityLogic",
-    //   icon: ql,
-    //   date: "Feb 2023 - Present",
-    //   cssSelector: "ql",
-    //   points: [
-    //     "TESTING: I have experience in manual testing, automated testing, and performance testing.",
-    //     "TEAM COLLABORATION: I have worked closely with developers, product managers, and other QA specialists to ensure that the product is of the highest quality.",
-    //     "PROBLEM-SOLVING: I have a strong ability to identify and solve problems quickly and efficiently.",
-    //     "ATTENTION TO DETAIL: I have a keen eye for detail and am able to spot even the smallest of bugs.",
-    //     "COMMUNICATION: I have excellent communication skills and am able to clearly and effectively communicate with all members of the team."
-    //   ]
-    // },
-    // {
-    //   title: "Freelance Software Developer",
-    //   company_name: "Self-Employed",
-    //   icon: myLogo,
-    //   date: "Aug 2023 - Present",
-    //   cssSelector: "myLogo",
-    //   points: [
-    //     "DEVELOPMENT: Building and maintaining applications collaboratively; both Full Stack and Front End.",
-    //     "COLLABORATIVE COMMUNICATION: Descriptive and articulate nature with a clear understanding of project scopes and requirements, making it easy to bridge the gap between technical and non-technical team members.",
-    //     "CREATIVE MARKETING: Experience with social media and marketing techniques, executing novel methods through Graphic Design and user engagement strategies that are proven to produce results."
-    //   ]
-    // },
     {
       title: "Software Developer Intern",
       company_name: "CodeWorks",
@@ -54,6 +28,30 @@ const experienceData = {
         "TEAM COLLABORATION: I worked closely with other managers to ensure the company goals were being met while maintaining the company values.",
         "INVENTORY MANAGEMENT: Oversaw inventory for the shop, ensuring timely access to equipment and materials.",
         "CUSTOMER RELATIONS: Visited with customers, addressing concerns and helping problem solve any potential issues. This created a healthy environment between customer and company."
+      ]
+    },
+    {
+      title: "Crew Lead/Installer",
+      company_name: "Mr. Mudd Concrete Corp.",
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-JQ6EGpZLZZW0Lb1VrqcIlREQL4upIZJiyA&s",
+      date: "August 2021 - August 2023",
+      cssSelector: "imag",
+      points: [
+        "CREW LEADERSHIP: Led a crew of two, assisting customers with their repair needs and ensuring high-quality work.",
+        "CUSTOMER SERVICE: Provided excellent customer service, addressing repair needs promptly and professionally.",
+        "EQUIPMENT MANAGEMENT: Maintained equipment to ensure increased productivity."
+      ]
+    },
+    {
+      title: "Owner",
+      company_name: "Linear Lawncare LLC",
+      icon: linear,
+      date: "August 2021 - August 2023",
+      cssSelector: "imag",
+      points: [
+        "CUSTOMER NETWORKING AND RELATIONS: Handled customer networking and maintained strong relationships to drive business growth.",
+        "ACCOUNTING MANAGEMENT: Managed several accounting tasks, ensuring accurate financial records and efficient budgeting.",
+        "QUALITY ASSURANCE: Ensured high-quality work by maintaining equipment daily, preventing downtime and enhancing service delivery."
       ]
     }
   ]
