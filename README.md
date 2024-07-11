@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="./src/assets/img/icons/KJlogo.png" alt="My Custom Logo" class="img-fluid" width="25%" />
 
 Welcome to my portfolio template!
 =================================
