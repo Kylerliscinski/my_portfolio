@@ -34,60 +34,60 @@ const projectData = {
         }
       ]
     },
-    {
-      id: "spuditions",
-      name: "Spuditions",
-      description: "Spuditions is a website built for those who love the outdoors. This application provides users with information about Idaho state parks. When using our website, you can see the weather, pricing, directions, and reviews for your desired location.",
-      image: spuditions,
-      source_code_link: "https://spuditions.com/",
-      source_code_icon: github,
-      cssSelector: "grant-ready",
-      tags: [
-        {
-          name: "vuejs",
-          color: "green-text-gradient"
-        },
-        {
-          name: "javascript",
-          color: "yellow-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient"
-        },
-        {
-          name: "bootstrap",
-          color: "blue-text-gradient"
-        }
-      ]
-    },
-    {
-      name: "Inspire",
-      description: "Inspire is a sleek designed homepage for your web-browser. It is a simple application, displaying the date, time, and weather. A bonus of this application is the ability to add 'todos' that you can check off when complete. If you are feeling like life is to cluttered, use Inspire to help simplify your day",
-      image: inspire,
-      source_code_link: "https://github.com/Kylerliscinski/inspire",
-      source_code_icon: github,
-      cssSelector: "threadit-ai",
-      tags: [
-        {
-          name: "css",
-          color: "green-text-gradient"
-        },
-        {
-          name: "javascript",
-          color: "yellow-text-gradient"
-        },
+    // {
+    //   id: "spuditions",
+    //   name: "Spuditions",
+    //   description: "Spuditions is a website built for those who love the outdoors. This application provides users with information about Idaho state parks. When using our website, you can see the weather, pricing, directions, and reviews for your desired location.",
+    //   image: spuditions,
+    //   source_code_link: "https://spuditions.com/",
+    //   source_code_icon: github,
+    //   cssSelector: "grant-ready",
+    //   tags: [
+    //     {
+    //       name: "vuejs",
+    //       color: "green-text-gradient"
+    //     },
+    //     {
+    //       name: "javascript",
+    //       color: "yellow-text-gradient",
+    //     },
+    //     {
+    //       name: "scss",
+    //       color: "pink-text-gradient"
+    //     },
+    //     {
+    //       name: "bootstrap",
+    //       color: "blue-text-gradient"
+    //     }
+    //   ]
+    // },
+    // {
+    //   name: "Inspire",
+    //   description: "Inspire is a sleek designed homepage for your web-browser. It is a simple application, displaying the date, time, and weather. A bonus of this application is the ability to add 'todos' that you can check off when complete. If you are feeling like life is to cluttered, use Inspire to help simplify your day",
+    //   image: inspire,
+    //   source_code_link: "https://github.com/Kylerliscinski/inspire",
+    //   source_code_icon: github,
+    //   cssSelector: "threadit-ai",
+    //   tags: [
+    //     {
+    //       name: "css",
+    //       color: "green-text-gradient"
+    //     },
+    //     {
+    //       name: "javascript",
+    //       color: "yellow-text-gradient"
+    //     },
 
-        {
-          name: "bootstrap",
-          color: "blue-text-gradient"
-        },
-        {
-          name: "staticwebsite",
-          color: "pink-text-gradient"
-        },
-      ]
-    }
+    //     {
+    //       name: "bootstrap",
+    //       color: "blue-text-gradient"
+    //     },
+    //     {
+    //       name: "staticwebsite",
+    //       color: "pink-text-gradient"
+    //     },
+    //   ]
+    // }
   ]
 };
 
